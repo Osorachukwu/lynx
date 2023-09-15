@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: rgb(128, 128, 50);
+  --gray-color: rgb(211, 204, 204);
+    
+}
+  
+body {
+  font-size: large;
+  overflow: hidden;
+  background-color: var(--gray-color);
+}
+
+a {
+  text-decoration:  none;
+}
+
+li {
+  list-style-type: none;
+  border-bottom: 1px solid var(--gray-color) ;
+}
+
+.col-1 {
+  padding: 10px 50px 10px 50px;
+  height: 425px;
+  width: 625px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 19px;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
+}
+  
+.col-1 {
+  width: 50%;
+  padding-left: 5em;
+  height: 100vh;
+}
+  
+
+.mobileProfileHolder {
+ display: none;
+}
+
+/* .vanishing {
+  display: none;
+} */
+  
+.hero {
+  margin-top: 120px;
+}
+.icons {
+  font-size: xx-large;
+}
+
+.btn {
+  padding: 10px;
+}
+
+.myName{
+  font-size: 50px;
+}
+  
+.foot {
+  font-size: 15px;
+} 
+  
+
+.parent{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  margin-inline: auto;
+  margin-bottom: 80px;
+}
+
+img {
+  position: relative;
+  width: 100%;
+}
+
+.logo {
+  background-color: rgb(255, 137, 117);
+  width: 100px;
+  padding: 5px;
+  height: 100%;
+
+}
+
+
+/* About Page */
+.bout {
+  /* padding: 0 30px; */
+  height: 100vh;
+}
+
+.main {
+  border: 9px solid black;
+}
+.main1 {
+  height: 450px;
+  width: 800px;
+  border: 2px solid red;
+  background-color: pink;
+}
+.main1 > div{
+  height: 200px;
+  width: 300px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+ 
+
+} 
+.cards h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  
+}
+.aboutSection1 > h2 {
+  color: red;
+  font-weight: bolder;
+}
+.cards span {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+
+.sect {
+  margin-top: 80px;
+  background-color: blue;
+}
+
+
+@media screen and (max-width: 700px) {
+  .parent{
+    /* position: absolute;
+    left: 200px; */
+    display: none;
+  }
+  .vanishing {
+    display: block;
+    border-radius: 50%;
+  }
+
+  .mobileProfileHolder{
+    display: block;
+  }
+
+  .hero {
+    margin-top: 50px;
+  }
+  .col-2 {
+    display: none;
+  
+  }
+
+  .col-1{
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .foot {
+    font-weight: bolder;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .col-1{
+    padding-left: 20px;
+    
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .myName{
+    font-size: 35px;
+  }
+}
